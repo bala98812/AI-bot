@@ -1,0 +1,9 @@
+Flask
+flask-cors
+transformers
+torch
+googletrans==4.0.0-rc1
+requests
+python-dotenv
+
+# pip install flask

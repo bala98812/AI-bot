@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Generation Bot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Story Generation Bot</h1>
+        <textarea id="prompt" placeholder="Enter your English prompt here..."></textarea>
+        <button id="generate-btn">Generate Story</button>
+        <div id="loading"></div>
+        
+        <!-- English Story Output -->
+        <div class="output" id="output">
+            <h2>Generated English Story:</h2>
+            <p id="story-text"></p>
+        </div>
+
+        <!-- Tamil Story Output -->
+        <div class="output" id="tamil-output">
+            <h2>Generated Tamil Story:</h2>
+            <p id="tamil-story-text"></p>
+        </div>
+
+        <!-- Generate Audio Button -->
+        <button id="generate-audio-btn" style="display: none;">Generate Audio</button>
+        <audio id="audio-player" controls style="display: none;"></audio>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
